@@ -9,9 +9,7 @@ import (
 func main() {
 
 	machine.I2C0.Configure(machine.I2CConfig{
-		SCL:       machine.SCL_PIN,
-		SDA:       machine.SDA_PIN,
-		Frequency: 100000,
+		Frequency: machine.TWI_FREQ_100KHZ,
 	})
 
 	for {
